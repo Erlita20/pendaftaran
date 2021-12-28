@@ -1,7 +1,7 @@
 version: '3.8'
 services:
     app:
-        image: erlitadesycahyuni/uas
+        image: erlitadesycahyuni/uas_sister
         container_name: php-apache
         build:
             context: ./uas
@@ -9,7 +9,7 @@ services:
         depends_on:
             - db
         volumes:
-            - ./uas/uas:/var/www/html/
+            - ./uas/uas_sister:/var/www/html/
         ports:
             - 8000:80
 
